@@ -133,18 +133,23 @@ body {
 
 .intro {
     background-color: rgba(0, 0, 0, 0.6);
-    padding: 15px;
+    padding: 30px;
     border-radius: 10px;
-    width: 80%;
+    width: 40%;
+    display: grid;
+    gap: 20px;
+    height: 130px;
 }
 
 .intro h2 {
-    font-size: 28px;
+    font-size: 38px;
     margin-bottom: 10px;
+    font-weight: 600;
 }
 
 .intro p {
-    font-size: 16px;
+    font-size: 17px;
+    font-weight: 500;
 }
 
 .tools {
@@ -165,6 +170,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 20px;
 }
 
 .tool-1 { background: linear-gradient(135deg, #ff9a9e, #fad0c4); }
@@ -190,7 +196,6 @@ input {
     border-radius: 5px;
     border: 1px solid #ddd;
     margin-bottom: 10px;
-    text-align: center;
 }
 
 button {
@@ -208,6 +213,24 @@ button:hover {
     background-color: #555;
 }
 
+footer {
+    margin-top: 20px;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+}
+.tool-3 button {
+    background-color: #4caf50;
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
 #peopleList {
     list-style: none;
     padding: 0;
@@ -217,24 +240,30 @@ button:hover {
     justify-content: center;
     gap: 15px;
 }
-
 #peopleList li {
     background: white;
-    padding: 10px;
-    width: 180px;
+    padding: 15px;
+    width: 200px;
     text-align: center;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     font-weight: bold;
 }
-
-footer {
-    margin-top: 20px;
-    background-color: #333;
-    color: white;
-    padding: 10px;
-    text-align: center;
-    width: 100%;
+.tool-3 input {
+    width: 339px;
+    padding: 12px;
+    border: 2px solid #4caf50;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+}
+.from {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.tool-3 button:hover {
+    background-color: #96e6a1;
 }
 
 @media screen and (max-width: 768px) {
@@ -271,8 +300,31 @@ footer {
     }
 
     #peopleList li {
-        width: 160px;
+        width: 100%;
         padding: 8px;
+    }
+    .tool-3 input {
+        width: 95%;
+        padding: 12px;
+        border: 2px solid #4caf50;
+        border-radius: 8px;
+        font-size: 16px;
+        outline: none;
+    }
+
+    .from {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #peopleList {
+        list-style: none;
+        padding: 0;
+        margin-top: 20px;
+        display: flex;
+        gap: 15px;
+        flex-direction: column;
     }
 }
 
@@ -303,9 +355,17 @@ footer {
         padding: 6px 12px;
         font-size: 12px;
     }
+    #peopleList {
+        list-style: none;
+        padding: 0;
+        margin-top: 20px;
+        display: flex;
+        gap: 15px;
+        flex-direction: column;
+    }
 
     #peopleList li {
-        width: 140px;
+        width: 100%;
         padding: 6px;
     }
 }

@@ -1,71 +1,82 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <link rel="stylesheet" href="style.css">
-        <title>Digital Explorer</title>
-        <link rel="website Icon" type="png"
-        href="img/png-internet-explorer-4700.png">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <body>
-            <div class="content">
-                <div class="intro">
-                    <h2>Welcome, Digital Explorer</h2>
-                    <p>Discover tools to solve problems and explore the digital world.</p>
-                </div>
-            </div>
-            <div class="tools">
-                <div class="tool-1 tool-section">
-                    <h2>Square Calculator</h2>
-                    <p>Enter a number to calculate its square.</p>
-                    
-                        <input type="text" placeholder="Enter a number">
-                      <button>Calculate</button>
-                </div>
-                <div class="tool-2 tool-section">
-                   <h2>Array Sum Calculator</h2>
-                   <p>Enter 5 numbers separated by commas.</p>
-                   <input type="text" placeholder="e.g., 1,2,3,4,5">
-                   <button>Calculate</button> 
-                </div>
-                <div class="tool-3 tool-section">
-                    <h2>People Explorer</h2>
-                    <p>Filter people by name or age.</p>
-                    <input type="text" id="filterInput" placeholder="Search by name or age">
-                   <button>Filter</button>
-                   <ul id="peopleList">
-                    <li>Alice - 25 years old</li>
-                    <li>Bob - 30 years old</li>
-                    <li>Charlie - 35 years old</li>
-                    <li>David - 40 years old</li>
-                    <li>Eva - 22 years old</li>
-                    <li>Frank - 28 years old</li>
-                    <li>Grace - 32 years old</li>
-                    <li>Hank - 45 years old</li>
-                    <li>Ivy - 29 years old</li>
-                    <li>Jack - 33 years old</li>
-                   </ul> 
-                </div>
-                <div class="tool-4 tool-section">
-                    <h2>String Reverser</h2>
-                    <p>Enter a string to reverse it.</p>
-                    <input type="text" placeholder="Enter text">
-                    <button>Reverse</button>
-                </div>
-                <div class="tool-5 tool-section">
-                    <h2>Voting System</h2>
-                    <p>Enter votes to determine the winner.</p>
-                    <input type="text" placeholder="red,blue,red">
-                    <button>Find Winner</button>
-                </div>
-                <div class="tool-6 tool-section">
-                    <h2>Quote Generator</h2>
-                    <p>Click to get an inspirational quote.</p>
-                    <button>Generate</button>
-                </div>
-            </div>
-            <footer>
-                <p>Made with🤘by Angkon</p>
-            </footer>
-        </body>
-    </head>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Explorer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="content">
+        <div class="intro">
+            <h2>Welcome, Digital Explorer</h2>
+            <p>Discover tools to solve problems and explore the digital world.</p>
+        </div>
+    </div>
+
+    <div class="tools">
+        <!-- 1. Square Calculator -->
+        <div class="tool-1 tool-section">
+            <h2>Square Calculator</h2>
+            <p>Enter a number to calculate its square.</p>
+            <input type="text" id="squareInput" placeholder="Enter a number">
+            <button onclick="calculateSquare()">Calculate</button>
+            <p id="squareResult"></p>
+        </div>
+
+        <!-- 2. Array Sum Calculator -->
+        <div class="tool-2 tool-section">
+            <h2>Array Sum Calculator</h2>
+            <p>Enter 5 numbers separated by commas.</p>
+            <input type="text" id="arrayInput" placeholder="e.g., 1,2,3,4,5">
+            <button onclick="calculateArraySum()">Calculate</button>
+            <p id="arrayResult"></p>
+        </div>
+
+        <!-- 3. People Explorer -->
+        <div class="tool-3 tool-section">
+            <h2>People Explorer</h2>
+            <p>Filter people by name or age.</p>
+            <input type="text" id="filterInput" placeholder="Search by name or age">
+            <button onclick="filterPeople()">Filter</button>
+            <ul id="peopleList"></ul>
+        </div>
+
+        <!-- 4. String Reverser -->
+        <div class="tool-4 tool-section">
+            <h2>String Reverser</h2>
+            <p>Enter a string to reverse it.</p>
+            <input type="text" id="stringInput" placeholder="Enter text">
+            <button onclick="reverseString()">Reverse</button>
+            <p id="reverseResult"></p>
+        </div>
+
+        <!-- 5. Voting System -->
+        <div class="tool-5 tool-section">
+            <h2>Voting System</h2>
+            <p>Enter votes to determine the winner.</p>
+            <input type="text" id="voteInput" placeholder="red,blue,red">
+            <button onclick="findWinner()">Find Winner</button>
+            <p id="voteResult"></p>
+        </div>
+
+        <!-- 6. Quote Generator -->
+        <div class="tool-6 tool-section">
+            <h2>Quote Generator</h2>
+            <p>Click to get an inspirational quote.</p>
+            <button onclick="generateQuote()">Generate</button>
+            <p id="quoteResult"></p>
+        </div>
+    </div>
+
+    <footer>
+        <p>Made with 🤘 by Angkon</p>
+    </footer>
+
+    <!-- JS File Link -->
+    <script src="pro.js"></script>
+</body>
+
 </html>
