@@ -81,10 +81,10 @@ function findWinner() {
 
 // 6. Quote Generator
 const quotes = [
-  "The only limit to our realization of tomorrow is our doubts of today.",
-  "Do what you can, with what you have, where you are.",
-  "The best way to predict the future is to invent it.",
-  "Strive not to be a success, but rather to be of value.",
+  "i need a break",
+  "pepole allways say that time changes things, but you actually have to change them yourself.",
+  "The best way to predict the future is to create it.",
+  "Success is not final, failure is not fatal: It is the courage to continue that counts.",
   "The only way to do great work is to love what you do.",
 ];
 
